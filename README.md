@@ -25,12 +25,15 @@
 ### 05/10/19
 
 * [Express](https://vimeo.com/335468079/fa888f9c60)
+* [Middleware](https://vimeo.com/335941349/e79514cfea)
 
 ---
 
 ## Week 2
 
 ### 05/13/19
+
+* [Mongo](https://vimeo.com/335941486/22af05cda6)
 
 ### 05/14/19
 
