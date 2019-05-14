@@ -18,23 +18,30 @@
       <fieldset>
         <legend>Create Book</legend>
 
-        <form action="" method="POST">
+        <form action="/books" method="POST" autocomplete="off">
           <div>
-            <label for=""></label>
-            <input type="text">
+            <label for="">Title</label>
+            <input type="text" name='title'>
           </div>
           <div>
-            <label for=""></label>
-            <input type="text">
+            <label for="">Pages</label>
+            <input type="number" name='pages'>
           </div>
           <div>
-            <label for=""></label>
-            <input type="text">
+            <label for="">Publisher</label>
+            <input type="text" name='publisher'>
           </div>
           <div>
-            <label for=""></label>
-            <input type="text">
+            <label for="">Author</label>
+
+            <select name="author" id="">
+              <% for (const author of authors) { %>
+                <option value="<%= author._id %>"><%= author.name %></option>
+              <% } %>
+            </select>
           </div>
+
+          <button>Submit</button>
         </form>
       </fieldset>
     </main>

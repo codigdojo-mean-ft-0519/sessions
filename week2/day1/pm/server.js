@@ -69,7 +69,8 @@ const AuthorSchema = new Schema({
     {
       type: Schema.Types.ObjectId,
       ref: 'Book'
-  }]
+    }
+  ]
 
   // created_at: Date,
   // updatedAt: Date
@@ -91,6 +92,7 @@ app.get('/', function (request, response) {
 // root route for resource authors
 app.get('/authors', function (request, response) {
   Author.find({})
+    .populate('books')
     // success
     .then(authors => response.render('authors/index', { authors: authors }))
     // failure
@@ -117,12 +119,63 @@ app.post('/authors', function (request, response) {
 // book routes
 
 app.get('/books', function (request, response) {
-  response.render('books/index');
+
+  Book.find({})
+    .populate('author')
+    .then(books => {
+      // Author.find({})
+      //   .then(authors => {
+      //     for (const book of books) {
+      //       for (const author of authors) {
+      //         if (book.author === author._id) {
+      //           book.author = author;
+      //           break;
+      //         }
+      //       }
+      //     }
+        // })
+      
+      response.render('books/index', { books });
+    })
+    .catch(console.log);
+  
 });
 
 
 app.get('/books/new', function (request, response) {
-  response.render('books/new');
+  Author.find({})
+    .then(authors => response.render('books/new', { authors }))
+    .catch(error => {
+      console.log(error); 
+
+      response.redirect('/books');
+    })
+  
+});
+
+app.post('/books', function (request, response) {
+  console.log(request.body);
+
+  Book.create(request.body)
+    .then(book => {
+      console.log(book);
+
+      return Author.findById(book.author)
+        .then(author => {
+          
+          author.books.push(book._id);
+          console.log(author);
+
+          return author.save();
+        })
+        .then(() => response.redirect('/books'));
+
+    })
+    .catch(error => {
+      const errors = Object.keys(error.errors).map(key => error.errors[key].message);
+
+      response.render('books/new', { errors });
+    })
 });
 
 // listening for incoming connection on port

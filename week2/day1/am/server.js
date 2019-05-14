@@ -39,7 +39,16 @@ const animal = new Animal({
 // animal instance (document)
 console.log(animal);
 
+/// callback syntax
+// animal.save(function (error, savedAnimal) {
+//   if (error) {
+//     throw error;
+//   }
 
+//   console.log(savedAnimal);
+// })
+
+// promise syntax
 animal.save()
    // success
   .then(function (savedAnimal) { 

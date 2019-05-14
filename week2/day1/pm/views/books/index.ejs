@@ -14,6 +14,32 @@
           <li><a href="/books/new">Create Book</a></li>
         </ul>
       </nav>
+
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Publisher</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% for (const book of books) { %>
+              <tr>
+                <td><%= book.title %></td>
+                <td><%= book.author.name %></td>
+                <td><%= book.pages %></td>
+                <td><%= book.publisher %></td>
+                <td> Fututre Actions</td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </section>
     </main>
 </body>
 </html>

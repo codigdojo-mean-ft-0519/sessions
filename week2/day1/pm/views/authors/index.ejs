@@ -33,7 +33,14 @@
               <td><%= author.name %></td>
               <td><%= author.age %></td>
               <td><%= author.isAlive %></td>
-              <td><%= author.books %></td>
+              <td>
+                <ul>
+                  <%  for (const book of author.books) { %>
+                    <li><%= book.title %></li>
+                  <% } %>
+                </ul>
+
+              </td>
               <td>Future Action</td>
             </tr>
           <% } %>
