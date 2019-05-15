@@ -34,8 +34,11 @@
 ### 05/13/19
 
 * [Mongo](https://vimeo.com/335941486/22af05cda6)
+* [Integration](https://vimeo.com/336238767/611901200b)
 
 ### 05/14/19
+
+* [Relationships](https://vimeo.com/336238436/60749e0d07)
 
 ### 05/15/19
 
