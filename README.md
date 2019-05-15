@@ -39,8 +39,11 @@
 ### 05/14/19
 
 * [Relationships](https://vimeo.com/336238436/60749e0d07)
+* [Code Review](https://vimeo.com/336425650/4cfc734177)
 
 ### 05/15/19
+
+* [Modularization](https://vimeo.com/336425402/bd2199d983)
 
 ### 05/16/19
 
