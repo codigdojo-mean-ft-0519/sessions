@@ -53,6 +53,8 @@
 
 ### 05/17/19
 
+* [Code Review](https://vimeo.com/336904695/07a6f12a25)
+
 ---
 
 ## Week 3
