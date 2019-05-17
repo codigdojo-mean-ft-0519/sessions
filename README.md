@@ -48,6 +48,9 @@
 
 ### 05/16/19
 
+* [TypeScript](https://vimeo.com/336718851/cf414ecc50)
+* [Angular Overview](https://vimeo.com/336718398/70eb31e66e)
+
 ### 05/17/19
 
 ---
