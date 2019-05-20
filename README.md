@@ -54,12 +54,15 @@
 ### 05/17/19
 
 * [Code Review](https://vimeo.com/336904695/07a6f12a25)
+* [Book Form](https://vimeo.com/337363608/b22da48eae)
 
 ---
 
 ## Week 3
 
 ### 05/20/19
+
+* [Restful Tasks](https://vimeo.com/337361603/8c0d8f68f0)
 
 ### 05/21/19
 
