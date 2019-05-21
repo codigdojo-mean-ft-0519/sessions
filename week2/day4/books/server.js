@@ -13,4 +13,6 @@ app.use(express.static(path.join(__dirname, 'dist/books')));
 
 console.log(path.join(__dirname, 'dist/books'));
 
+require('./server/routes/routes')(app);
+
 app.listen(port, () => console.log(`express server listening on port ${port}`));
