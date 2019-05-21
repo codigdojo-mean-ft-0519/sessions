@@ -18,7 +18,9 @@
         <td>{{ book.title }}</td>
         <td>{{ book.author }}</td>
         <td>{{ book.year }}</td>
-        <td>Future Actions</td>
+        <td (click)="onEvent($event)">
+          <button (click)="onDelete(book.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
