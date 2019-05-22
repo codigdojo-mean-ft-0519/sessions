@@ -63,8 +63,12 @@
 ### 05/20/19
 
 * [Restful Tasks](https://vimeo.com/337361603/8c0d8f68f0)
+* [Input/Ouput](https://vimeo.com/337653523/a4d00487e7)
 
 ### 05/21/19
+
+* [Services](https://vimeo.com/337653613/f1efd128a5)
+* [Routing](https://vimeo.com/337653678/6ce4fa1bf5)
 
 ### 05/22/19
 
