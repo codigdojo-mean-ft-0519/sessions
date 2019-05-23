@@ -16,14 +16,15 @@
       <tr
         *ngFor="let book of books"
         (click)="onClick(book)"
-        [routerLink]="book.id"
+        [routerLink]="book._id"
       >
-        <td>{{ book.id }}</td>
+        <td>{{ book._id }}</td>
         <td>{{ book.title }}</td>
         <td>{{ book.author }}</td>
         <td>{{ book.year }}</td>
         <td (click)="onEvent($event)">
-          <button (click)="onDelete(book.id)">Delete</button>
+          <button (click)="onDelete(book._id)">Delete</button>
+          <button [routerLink]="[book._id, 'edit']">Edit</button>
         </td>
       </tr>
     </tbody>

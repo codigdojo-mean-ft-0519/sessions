@@ -319,6 +319,11 @@
     semver "5.6.0"
     semver-intersect "1.4.0"
 
+"@status/codes@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@status/codes/-/codes-1.2.0.tgz#fd20f9b484add20511cc7a1b5692e93d210c8428"
+  integrity sha512-mu2kw8nXB08Z3G9UeRMbUzUL8d6EWceklKbom+v++vZfY1xMSPotgLZNPdWcgLyjl588DXQ+GOGdn+1PjfHX7Q==
+
 "@types/jasmine@*":
   version "3.3.12"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"

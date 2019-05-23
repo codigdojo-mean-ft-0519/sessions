@@ -68,7 +68,7 @@ export class BookListComponent implements OnInit {
       console.log('deleted', deletedBook);
 
       this.books = this.books.filter(
-        bookFromArray => bookFromArray.id !== deletedBook.id
+        bookFromArray => bookFromArray._id !== deletedBook._id
       );
 
       console.log('this books filtered', this.books);

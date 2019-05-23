@@ -4,12 +4,15 @@ import { of, Observable } from 'rxjs';
 
 import { BOOKS } from '../data';
 import { Book } from '../models';
+// import { Book } from '../models/book.model';
+// import { Author } from '../models/author.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BookService {
-  private readonly base = 'http://59498bce6d49df0011102cfc.mockapi.io/books';
+  // private readonly base = 'http://59498bce6d49df0011102cfc.mockapi.io/books';
+  private readonly base = '/api/books';
 
   constructor(private readonly http: HttpClient) {}
 
@@ -21,6 +24,10 @@ export class BookService {
 
   getBook(id: string): Observable<Book> {
     return this.http.get<Book>(`${this.base}/${id}`);
+  }
+
+  updateBook(book: Book): Observable<Book> {
+    return this.http.put<Book>(`${this.base}/${book._id}`, book);
   }
 
   createBook(book: Book): Observable<Book> {

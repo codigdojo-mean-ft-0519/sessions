@@ -7,6 +7,7 @@ import { BookNewComponent } from './books/book-new/book-new.component';
 
 import { environment } from '../environments/environment';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BookEditComponent } from './books/book-edit/book-edit.component';
 
 const enableTracing = false && !environment.production;
 
@@ -33,6 +34,10 @@ const routes: Routes = [
       {
         path: ':id',
         component: BookDetailComponent,
+      },
+      {
+        path: ':id/edit',
+        component: BookEditComponent,
       },
     ],
   },

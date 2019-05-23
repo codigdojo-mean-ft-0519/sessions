@@ -1,0 +1,36 @@
+<section>
+  <fieldset>
+    <legend>Create Book</legend>
+
+    <form
+      (submit)="onUpdate($event, bookForm)"
+      #bookForm="ngForm"
+      autocomplete="off"
+    >
+      <input type="hidden" name="_id" [ngModel]="book?._id" />
+      <div>
+        <label for="">title</label>
+        <!-- one-way data binding  [ngModel]="book?.title" -->
+        <input type="text" name="title" [ngModel]="book?.title" required />
+      </div>
+      <div>
+        <label for="">author</label>
+        <input type="text" name="author" [ngModel]="book?.author" />
+      </div>
+      <div>
+        <label for="">pages</label>
+        <input type="number" name="pages" [ngModel]="book?.pages" />
+      </div>
+      <div>
+        <label for="">year</label>
+        <input type="number" name="year" [ngModel]="book?.year" />
+      </div>
+      <div>
+        <label for="">publisher</label>
+        <input type="text" name="publisher" [ngModel]="book?.publisher" />
+      </div>
+      <input *ngIf="bookForm.valid" type="submit" value="Submit" />
+      <!-- <button *ngIf="bookForm.valid">Submit</button> -->
+    </form>
+  </fieldset>
+</section>
