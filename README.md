@@ -72,7 +72,13 @@
 
 ### 05/22/19
 
+* [Tasks Review](https://vimeo.com/338274378/f1ac3669e6)
+* [Integration](https://vimeo.com/338275856/9b0d71e5cb)
+
 ### 05/23/19
+
+* [Cakes Review](https://vimeo.com/338272522/23dff85bf7)
+* [Server Login/Reg](https://vimeo.com/338274027/78f69fbcff)
 
 ### 05/24/19
 
