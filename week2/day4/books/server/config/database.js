@@ -4,7 +4,10 @@ const fs = require('fs');
 
 const modelsPath = path.join(__dirname, '../models');
 
-mongoose.connect('mongodb://localhost/books', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/books', {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+});
 mongoose.connection.on('connected', () => console.log('connected to mongodb'));
 
 // this ensures the models/schemas are loaded

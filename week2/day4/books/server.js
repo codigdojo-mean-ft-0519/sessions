@@ -1,3 +1,5 @@
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 const parser = require('body-parser');
 const express = require('express');
 const path = require('path');
@@ -11,7 +13,22 @@ require('./server/config/database');
 
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
+app.use(cookieParser('as.dfjaslkdjflksajdflaskjdfbnlkasjndf'));
 app.use(express.static(path.join(__dirname, 'dist/books')));
+app.use(
+  session({
+    saveUninitialized: true,
+    secret: 'sessionSecret',
+    resave: false,
+    name: 'session',
+    rolling: true,
+    cookie: {
+      secure: false,
+      httpOnly: false,
+      maxAge: 3600000000,
+    },
+  })
+);
 app.use('/api', require('./server/routes'));
 app.use(require('./server/routes/catch-all.route'));
 
