@@ -8,14 +8,14 @@ import { BookNewComponent } from './books/book-new/book-new.component';
 import { environment } from '../environments/environment';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BookEditComponent } from './books/book-edit/book-edit.component';
+import { HomeComponent } from './home/home.component';
 
 const enableTracing = false && !environment.production;
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'books',
-    pathMatch: 'full',
+    component: HomeComponent,
   },
   {
     path: 'books',

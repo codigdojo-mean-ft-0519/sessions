@@ -1,10 +1,17 @@
 <nav>
   <ul>
-    <li>
-      <a routerLink="/cats">Home</a>
+    <li *ngIf="!isAuthed">
+      <a routerLink="/">Home</a>
     </li>
     <li>
+      <a routerLink="/books">Books</a>
+    </li>
+    <li *ngIf="isAuthed">
       <a routerLink="books/new">Create Book</a>
+    </li>
+
+    <li *ngIf="isAuthed">
+      <button (click)="logout()">Logout</button>
     </li>
   </ul>
 </nav>
