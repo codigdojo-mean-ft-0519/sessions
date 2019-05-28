@@ -82,11 +82,15 @@
 
 ### 05/24/19
 
+* [Client Login/Reg](https://vimeo.com/338894255/3613a388e9)
+
 ---
 
 ## Week 4
 
 ### 05/27/19
+
+* Holiday
 
 ### 05/28/19
 
