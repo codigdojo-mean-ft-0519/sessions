@@ -27,7 +27,7 @@
     "core-js": "^2.5.4",
     "express": "^4.17.0",
     "express-session": "^1.16.1",
-    "mongoose": "^5.5.9",
+    "mongoose": "^5.7.5",
     "mongoose-unique-validator": "^2.0.3",
     "ngx-cookie": "^4.1.2",
     "rxjs": "~6.3.3",
