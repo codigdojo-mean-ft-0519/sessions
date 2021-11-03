@@ -32,7 +32,7 @@
     "ngx-cookie": "^4.1.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "validator": "^11.0.0",
+    "validator": "^13.7.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
